@@ -1,7 +1,7 @@
 # Escape-the-Pac-man
 
 ```
-Escape the Pac-man-v1_PLAY NOW!/
+Escape the Pac-man_PLAY NOW!/
 ├── .editorconfig
 ├── .gitattributes
 ├── .gitignore
