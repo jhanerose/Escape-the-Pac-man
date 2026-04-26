@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0d8vxu0d4e0j"]
+
+[ext_resource type="Shader" uid="uid://5pmmanlshtr5" path="res://noise.gdshader" id="1_grdon"]
+[ext_resource type="Texture2D" uid="uid://bvgyyf3ldrscy" path="res://sprites/characters.png" id="2_ya7es"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_lyibo"]
+seed = 15
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1l3lx"]
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_lyibo")
+seamless = true
+in_3d_space = true
+seamless_blend_skirt = 0.627
+bump_strength = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p1166"]
+shader = ExtResource("1_grdon")
+shader_parameter/chars = ExtResource("2_ya7es")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_1l3lx")
+
+[node name="ColorRect2" type="ColorRect"]
+visible = false
+material = SubResource("ShaderMaterial_p1166")
+offset_left = -1058.9775
+offset_top = -723.5062
+offset_right = -1018.97754
+offset_bottom = -683.5062
+scale = Vector2(136.90549, 88.74249)

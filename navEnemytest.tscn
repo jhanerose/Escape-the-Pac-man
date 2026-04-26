@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://qa72o43ymyoa"]
+
+[ext_resource type="Script" uid="uid://dolc7ommr6owa" path="res://pacman.gd" id="1_5ydfn"]
+[ext_resource type="Texture2D" uid="uid://tihnnm4qlvg3" path="res://icon.svg" id="2_8sfws"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ydfn"]
+radius = 54.08327
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(120, 99)
+script = ExtResource("1_5ydfn")
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(0.72222406, 0, 0.13068005, 1)
+position = Vector2(0, 1)
+texture = ExtResource("2_8sfws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_5ydfn")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]

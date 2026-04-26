@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://c21x4kxfebv6h"]
+
+[ext_resource type="Script" uid="uid://dtd3l2g27kdkn" path="res://stair.gd" id="1_s3nut"]
+[ext_resource type="Texture2D" uid="uid://8qt4q02xqvrb" path="res://sprites/SF_Inside_B.png" id="2_qa4gl"]
+[ext_resource type="Texture2D" uid="uid://cclkbbyfb7ymh" path="res://Gate.png" id="3_qa4gl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okenp"]
+atlas = ExtResource("2_qa4gl")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7hh34"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okenp")
+}],
+"loop": true,
+"name": &"stair",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3nut"]
+size = Vector2(40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hh34"]
+atlas = ExtResource("3_qa4gl")
+region = Rect2(0, 0, 144, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k8bg"]
+atlas = ExtResource("3_qa4gl")
+region = Rect2(0, 96, 144, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nym1"]
+atlas = ExtResource("3_qa4gl")
+region = Rect2(0, 192, 144, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8d5iw"]
+atlas = ExtResource("3_qa4gl")
+region = Rect2(0, 288, 144, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fgpag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hh34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k8bg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nym1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8d5iw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_s3nut")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7hh34")
+animation = &"stair"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s3nut")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(48, -21)
+sprite_frames = SubResource("SpriteFrames_fgpag")
