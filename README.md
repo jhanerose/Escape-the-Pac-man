@@ -1,55 +1,116 @@
 # Escape the Pac-man
 
 ```
-Escape the Pac-man_PLAY NOW!/
+Escape the Pac-man-v2_PLAY NOW!/
+├── !Flame.png
+├── !Flame.png.import
 ├── .editorconfig
 ├── .gitattributes
 ├── .gitignore
 ├── .godot/
-├── sprites/
+├── imported/
+├── scene_groups_cache.cfg
+├── shader_cache/
+├── uid_cache.bin
 ├── Announcement.tscn
 ├── avoidance_sprite.tscn
+├── blue_fire.gd
+├── blue_fire.gd.uid
+├── Blue_fire.tscn
 ├── canvas_layer_2.gd
+├── canvas_layer_2.gd.uid
 ├── character_body_2d.gd
+├── character_body_2d.gd.uid
 ├── color_rect.gd
+├── color_rect.gd.uid
 ├── enemy.tscn
 ├── enemypackman2.gd
+├── enemypackman2.gd.uid
 ├── enemytest.gd
+├── enemytest.gd.uid
 ├── ENEMY_AI.gd
+├── ENEMY_AI.gd.uid
+├── Escape Subject Yellow.console.console.exe
+├── Escape Subject Yellow.console.exe
+├── Escape Subject Yellow.console.pck
 ├── Escape Subject Yellow.pck
-├── Escape the Pac-man.console.exe
-├── Escape the Pac-man.exe
 ├── EscapePacman.ogv
+├── EscapePacman.ogv.uid
+├── export_credentials.cfg
 ├── export_presets.cfg
 ├── GameManager.gd
+├── GameManager.gd.uid
 ├── GameOver.tscn
 ├── game_over.gd
+├── game_over.gd.uid
+├── gate.gd
+├── gate.gd.uid
+├── Gate.png
+├── Gate.png.import
+├── Gate.tscn
+├── gem_coin.gd
+├── gem_coin.gd.uid
+├── Gem_Coin.tscn
 ├── hide_obj.tscn
 ├── hide_obj2.tscn
 ├── h_box_container.gd
+├── h_box_container.gd.uid
 ├── icon.svg
+├── icon.svg.import
 ├── Level1.tscn
+├── Level2.tscn
 ├── LifeUI.gd
+├── LifeUI.gd.uid
 ├── locker.gd
+├── locker.gd.uid
 ├── locker.tscn
 ├── main_menu.gd
+├── main_menu.gd.uid
 ├── main_menu.tscn
+├── matrix rain.tscn
 ├── navEnemytest.tscn
 ├── navtest.tscn
+├── node_2d.tscn14941796726.tmp
+├── node_2d.tscn1994732481.tmp
+├── node_2d.tscn2016632334.tmp
+├── node_2d.tscn471016248.tmp
+├── node_2d.tscn717165301.tmp
+├── node_2d.tscn986088222.tmp
+├── noise.gdshader
+├── noise.gdshader.uid
 ├── pacman.gd
+├── pacman.gd.uid
 ├── pellet.gd
+├── pellet.gd.uid
 ├── pellet.tscn
 ├── player.gd
+├── player.gd.uid
+├── player.tscn
 ├── project.godot
+├── red_fire.gd
+├── red_fire.gd.uid
+├── red_fire.tscn
 ├── Sidepacman.png
+├── Sidepacman.png.import
 ├── Sidepacman2.png
+├── Sidepacman2.png.import
 ├── Sidepacman3.png
+├── Sidepacman3.png.import
+├── sprites/
+├── spr_coin_azu.png
+├── spr_coin_azu.png.import
 ├── stair.gd
+├── stair.gd.uid
 ├── stair.tscn
 ├── testplayer.gd
+├── testplayer.gd.uid
 ├── tile_map.gd
+├── tile_map.gd.uid
 ├── vignette.gdshader
+├── vignette.gdshader.uid
 ├── vignette.tscn
 ├── win.gd
-└── Win.tscn
+├── win.gd.uid
+├── Win.tscn
+└── Win2.tscn
 ```
