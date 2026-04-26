@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwsb1fwmiuo6m"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="AnnouncementUI" type="Label" parent="."]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -195.0
+offset_top = 11.0
+offset_right = 195.0
+offset_bottom = 34.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 23
+text = "You collected all pellets! Escape through the stairs!"

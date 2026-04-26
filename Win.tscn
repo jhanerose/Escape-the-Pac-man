@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvvrvr053w3ry"]
+
+[ext_resource type="Script" uid="uid://dtc8re1cqkben" path="res://win.gd" id="1_co8qc"]
+[ext_resource type="AudioStream" uid="uid://dg87hf6lj013t" path="res://sprites/arcade-win.mp3" id="2_co8qc"]
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_co8qc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1160.0
+offset_bottom = 649.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = -11.5
+offset_right = 163.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "thank you for playing the game, the game is still in progress!"
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -45.5
+offset_right = 34.0
+offset_bottom = -22.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Win!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_co8qc")
