@@ -1,4 +1,4 @@
-# Escape-the-Pac-man
+# Escape the Pac-man
 
 ```
 Escape the Pac-man_PLAY NOW!/
